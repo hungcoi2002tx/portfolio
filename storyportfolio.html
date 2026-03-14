@@ -6,6 +6,47 @@
     <meta name="description" content="Minh - Software Engineer turning complex problems into elegant solutions. Explore my journey, projects, and stories.">
     <meta name="author" content="Minh">
     <meta name="theme-color" content="#0f0f17">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://yourname.dev/storyportfolio.html">
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="profile">
+    <meta property="og:title" content="Minh | Software Engineer Story Portfolio">
+    <meta property="og:description" content="Software Engineer turning complex problems into elegant solutions. Explore my journey from first line of code to building scalable systems.">
+    <meta property="og:url" content="https://yourname.dev/storyportfolio.html">
+    <meta property="og:site_name" content="Minh Portfolio">
+    <meta property="og:locale" content="en_US">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Minh | Software Engineer Story Portfolio">
+    <meta name="twitter:description" content="Software Engineer turning complex problems into elegant solutions. Explore my journey, projects, and stories.">
+
+    <!-- JSON-LD Structured Data -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "ProfilePage",
+        "mainEntity": {
+            "@type": "Person",
+            "name": "Minh",
+            "jobTitle": "Software Engineer",
+            "description": "Software Engineer turning complex problems into elegant solutions.",
+            "url": "https://yourname.dev/storyportfolio.html",
+            "sameAs": [
+                "https://github.com",
+                "https://linkedin.com"
+            ],
+            "knowsAbout": ["JavaScript", "TypeScript", "Python", "Java", "React", "Node.js", "Next.js", "Django", "Spring Boot", "Docker", "AWS", "PostgreSQL", "MongoDB"],
+            "address": {
+                "@type": "PostalAddress",
+                "addressLocality": "Hanoi",
+                "addressCountry": "Vietnam"
+            }
+        }
+    }
+    </script>
+
     <title>Minh - Software Engineer Story Portfolio</title>
     <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>💻</text></svg>">
 
@@ -1302,31 +1343,34 @@
     <div class="scroll-progress" id="scrollProgress"></div>
 
     <!-- Navigation -->
-    <nav>
-        <div class="logo">M.</div>
-        <ul class="nav-links" id="navLinks">
-            <li><a href="#home">Home</a></li>
-            <li><a href="#journey">Journey</a></li>
-            <li><a href="#skills">Skills</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#values">Values</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
-        <div class="theme-toggle" id="themeToggle" aria-label="Toggle dark/light mode">
-            <span id="themeIcon">🌙</span>
-        </div>
-        <div class="mobile-toggle" id="mobileToggle">
-            <span></span>
-            <span></span>
-            <span></span>
-        </div>
-    </nav>
+    <header>
+        <nav aria-label="Main navigation">
+            <div class="logo">M.</div>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#journey">Journey</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#values">Values</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="theme-toggle" id="themeToggle" aria-label="Toggle dark/light mode" role="button" tabindex="0">
+                <span id="themeIcon">🌙</span>
+            </div>
+            <div class="mobile-toggle" id="mobileToggle" role="button" tabindex="0" aria-label="Toggle mobile menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
 
     <!-- Cursor Glow -->
     <div class="cursor-glow" id="cursorGlow"></div>
     <div class="cursor-dot" id="cursorDot"></div>
 
     <!-- Hero Section -->
+    <main>
     <section class="hero" id="home">
         <canvas id="particleCanvas"></canvas>
         <div class="orb orb-1"></div>
@@ -1503,7 +1547,7 @@
         <p class="section-subtitle">Stories I've built—from concept to deployment</p>
 
         <div class="projects-grid">
-            <div class="project-card reveal">
+            <article class="project-card reveal">
                 <div class="tilt-shine"></div>
                 <div class="project-image">📱</div>
                 <div class="project-content">
@@ -1523,9 +1567,9 @@
                         <a href="#" class="project-link">GitHub</a>
                     </div>
                 </div>
-            </div>
+            </article>
 
-            <div class="project-card reveal">
+            <article class="project-card reveal">
                 <div class="tilt-shine"></div>
                 <div class="project-image">🛒</div>
                 <div class="project-content">
@@ -1545,9 +1589,9 @@
                         <a href="#" class="project-link">GitHub</a>
                     </div>
                 </div>
-            </div>
+            </article>
 
-            <div class="project-card reveal">
+            <article class="project-card reveal">
                 <div class="tilt-shine"></div>
                 <div class="project-image">📊</div>
                 <div class="project-content">
@@ -1567,9 +1611,9 @@
                         <a href="#" class="project-link">GitHub</a>
                     </div>
                 </div>
-            </div>
+            </article>
 
-            <div class="project-card reveal">
+            <article class="project-card reveal">
                 <div class="tilt-shine"></div>
                 <div class="project-image">🤖</div>
                 <div class="project-content">
@@ -1589,9 +1633,9 @@
                         <a href="#" class="project-link">GitHub</a>
                     </div>
                 </div>
-            </div>
+            </article>
 
-            <div class="project-card reveal">
+            <article class="project-card reveal">
                 <div class="tilt-shine"></div>
                 <div class="project-image">🔐</div>
                 <div class="project-content">
@@ -1611,9 +1655,9 @@
                         <a href="#" class="project-link">GitHub</a>
                     </div>
                 </div>
-            </div>
+            </article>
 
-            <div class="project-card reveal">
+            <article class="project-card reveal">
                 <div class="tilt-shine"></div>
                 <div class="project-image">🌐</div>
                 <div class="project-content">
@@ -1633,7 +1677,7 @@
                         <a href="#" class="project-link">GitHub</a>
                     </div>
                 </div>
-            </div>
+            </article>
         </div>
     </section>
 
@@ -1707,11 +1751,15 @@
                 </a>
             </div>
 
-            <p class="footer-note">
-                Made with ❤️ and too much coffee in Hanoi, Vietnam
-            </p>
         </div>
     </section>
+    </main>
+
+    <footer>
+        <p class="footer-note">
+            Made with ❤️ and too much coffee in Hanoi, Vietnam
+        </p>
+    </footer>
 
     <!-- Back to Top Button -->
     <button class="back-to-top" id="backToTop" aria-label="Back to top">↑</button>
